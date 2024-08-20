@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.awt.event.ActionListener;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -14,6 +14,7 @@ public class MyFrame extends JFrame implements KeyListener {
 
         label = new JLabel();
         label.setBounds(0,0,100,100);
+        label.setBackground(Color.red);
 
 
         this.setVisible(true);
