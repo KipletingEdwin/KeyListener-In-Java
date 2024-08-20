@@ -16,6 +16,8 @@ public class MyFrame extends JFrame implements KeyListener {
         label.setBounds(0,0,100,100);
         label.setBackground(Color.red);
 
+        this.add(label);
+
 
         this.setVisible(true);
 
