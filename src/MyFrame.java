@@ -30,11 +30,11 @@ public class MyFrame extends JFrame implements KeyListener {
         switch (e.getKeyChar()){
             case 'a': label.setLocation(label.getX()-1, label.getY());
                 break;
-            case 'w': label.setLocation(label.getX(), label.getY()-1);
+            case 'w': label.setLocation(label.getX(), label.getY()-10);
                 break;
-            case 's': label.setLocation(label.getX(), label.getY()+1);
+            case 's': label.setLocation(label.getX(), label.getY()+10);
                 break;
-            case 'd': label.setLocation(label.getX()+1, label.getY());
+            case 'd': label.setLocation(label.getX()+10, label.getY());
                 break;
         }
 
@@ -43,6 +43,13 @@ public class MyFrame extends JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         //keyPressed   =  Invoked when a physical key is pressed down.Uses KeyCode, int output
+        switch (e.getKeyCode()){
+            case 37: label.setLocation(label.getX()-10, label.getY());
+            break;
+            case 38: label.setLocation(label.getX(), label.getY()-10);
+                break;
+
+        }
 
     }
 
