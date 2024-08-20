@@ -13,6 +13,7 @@ public class MyFrame extends JFrame implements KeyListener {
         this.addKeyListener(this);
 
         label = new JLabel();
+        label.setBounds(0,0,100,100);
 
 
         this.setVisible(true);
