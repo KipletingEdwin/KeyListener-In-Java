@@ -33,6 +33,8 @@ public class MyFrame extends JFrame implements KeyListener {
                 break;
             case 's': label.setLocation(label.getX(), label.getY()+1);
                 break;
+            case 'd': label.setLocation(label.getX()+1, label.getY());
+                break;
         }
 
     }
