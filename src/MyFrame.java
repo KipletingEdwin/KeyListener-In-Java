@@ -43,21 +43,24 @@ public class MyFrame extends JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         //keyPressed   =  Invoked when a physical key is pressed down.Uses KeyCode, int output
-        switch (e.getKeyCode()){
-            case 37: label.setLocation(label.getX()-10, label.getY());
+        switch (e.getKeyCode()) {
+            case 37:
+                label.setLocation(label.getX() - 10, label.getY());
                 break;
-            case 38: label.setLocation(label.getX(), label.getY()-10);
+            case 38:
+                label.setLocation(label.getX(), label.getY() - 10);
                 break;
-            case 39: label.setLocation(label.getX()+10, label.getY());
+            case 39:
+                label.setLocation(label.getX() + 10, label.getY());
                 break;
-
-
+            case 40:
+                label.setLocation(label.getX() + 10, label.getY()+10);
+                break;
         }
-
     }
 
     @Override
-    public void keyReleased(KeyEvent e) {
+    public void keyReleased (KeyEvent e) {
         //keyReleased  =  called whenever a button is released
         System.out.println("You released key char: " + e.getKeyChar());
         System.out.println("You released key code: " + e.getKeyCode());
