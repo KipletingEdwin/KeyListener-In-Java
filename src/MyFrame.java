@@ -11,6 +11,10 @@ public class MyFrame extends JFrame implements KeyListener {
         this.setSize(500,500);
         this.setLayout(null);
         this.addKeyListener(this);
+
+        label = new JLabel();
+
+
         this.setVisible(true);
 
     }
