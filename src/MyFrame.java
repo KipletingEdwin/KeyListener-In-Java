@@ -28,8 +28,10 @@ public class MyFrame extends JFrame implements KeyListener {
         //keyTyped  =  Invoked when a key is typed. Uses keyChair, char output
         switch (e.getKeyChar()){
             case 'a': label.setLocation(label.getX()-1, label.getY());
-            break;
+                break;
             case 'w': label.setLocation(label.getX(), label.getY()-1);
+                break;
+            case 's': label.setLocation(label.getX(), label.getY()+1);
                 break;
         }
 
