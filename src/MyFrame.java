@@ -13,12 +13,15 @@ public class MyFrame extends JFrame implements KeyListener {
         this.setLayout(null);
         this.addKeyListener(this);
 
-        icon = new ImageIcon();
+        icon = new ImageIcon("rocket.png");
 
         label = new JLabel();
         label.setBounds(0,0,100,100);
-        label.setBackground(Color.red);
-        label.setOpaque(true);
+        label.setIcon(icon);
+        //label.setBackground(Color.red);
+        //label.setOpaque(true);
+
+        this.getContentPane().setBackground(Color.black);
 
         this.add(label);
 
