@@ -5,12 +5,15 @@ import java.awt.event.KeyListener;
 
 public class MyFrame extends JFrame implements KeyListener {
     JLabel label;
+    ImageIcon icon;
 
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500,500);
         this.setLayout(null);
         this.addKeyListener(this);
+
+        icon = new ImageIcon();
 
         label = new JLabel();
         label.setBounds(0,0,100,100);
@@ -54,7 +57,7 @@ public class MyFrame extends JFrame implements KeyListener {
                 label.setLocation(label.getX() + 10, label.getY());
                 break;
             case 40:
-                label.setLocation(label.getX() + 10, label.getY()+10);
+                label.setLocation(label.getX() , label.getY()+10);
                 break;
         }
     }
